@@ -130,7 +130,34 @@ input, select{
     color: rgb(255, 255, 255);
     font-family: Mulish;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 20px;
+}
 
+/* Popular section styles */
+
+.popular_section{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: space-between;
+   
+}
+
+.text_content p, 
+.text_content li{
+    text-align: left;
+    font-size: 1rem;
+    line-height: 24px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.text_content h3{
+    text-align: left;
 }
