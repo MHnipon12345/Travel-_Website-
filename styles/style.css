@@ -95,7 +95,7 @@ li{
     margin: auto;
 }
 
-.travel_input{
+.travel_inputa{
     margin-top: 2rem;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.2);
@@ -119,19 +119,16 @@ input, select{
 
 .btn_primary{
     width: 175px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(255, 84, 0);
+    color: #fff;
+    border: 1px solid rgb(255, 84, 0);
     border-radius: 8px;
-    border: 1px solid rgb(255, 84, 0); 
-    gap: 8px ;
-    background: rgb(255, 84, 0);
-    padding: 14px 35px;
-    color: rgb(255, 255, 255);
-    font-family: Mulish;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 20px;
 }
 
 /* Popular section styles */
@@ -140,6 +137,11 @@ input, select{
     display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+}
+
+.popular_section img{
+    width: 100%;
+    height: 100%;
 }
 
 .text_content {
@@ -226,3 +228,51 @@ input, select{
 .footer_section hr{
     margin: 2rem 0;
 }
+
+.hambar{
+    display: none;
+}
+
+/* responsive media qurey */
+
+@media  screen and (max-width: 576px) {
+    .nav_option{
+       display: none;
+    }
+    .hambar{
+       display: block;
+   }
+    h3{
+       font-size: 26px;
+   }
+   .hambar i{
+       font-size: 26px;
+   }
+   .container{
+       margin: 3rem auto;
+   }
+   p{
+       font-size: 16px;
+   }
+   .explore_container h3{
+       font-size: 26px;
+   }
+   .explore_container p{
+       width: 60%;
+   }
+   .travel_inputa{
+       flex-direction: column;
+       width: 70%;
+       margin: auto;
+   }
+   .travel_inputa input,
+   .travel_inputa select,
+   .travel_inputa button {
+       width: 100%;
+       margin: 1rem 0;
+   }
+   .popular_section .row_1, .row_2, .row_3{
+       grid-template-columns: 1fr;
+   }
+}
+
